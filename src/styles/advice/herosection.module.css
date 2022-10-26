@@ -1,0 +1,48 @@
+.wrapper {
+  background: linear-gradient(209.14deg, #252228 11.72%, #1c1c21 89.61%);
+  @apply text-white flex lg:min-h-screen items-center pt-20 pb-12 px-2;
+}
+.content-wrapper {
+  @apply container mx-auto;
+}
+.content {
+  @apply flex flex-col gap-6 2xl:gap-7 items-center mx-auto;
+}
+.text-wrapper {
+  @apply flex-1;
+}
+.img-wrapper {
+  @apply flex-1 max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl w-full text-center;
+}
+.img-wrapper img {
+  @apply block w-full h-52 md:h-72 2xl:h-80 4xl:h-[400px] object-contain;
+}
+.title {
+  font-size: 2rem;
+  font-size: clamp(2rem, 1.68rem + 1.6vw, 3rem);
+  position: relative;
+  line-height: 1.4;
+  text-align: center;
+  @apply font-bold mb-2;
+}
+
+.mark {
+  @apply border-b-4 border-accent;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  font-size: clamp(0.875rem, 0.81rem + 0.284vw, 1rem);
+  @apply text-gray-200 text-center;
+}
+
+.button-wrapper {
+  @apply flex gap-5 mt-1;
+}
+
+.call-to-action-btn {
+  @apply px-5 py-3 rounded-md text-base border border-highlight-base bg-highlight-base hover:bg-highlight-light transition-colors;
+}
+.secondary-action-btn {
+  @apply px-5 py-3 rounded-md text-base border border-white hover:bg-gray-50 hover:bg-opacity-25 transition-colors;
+}

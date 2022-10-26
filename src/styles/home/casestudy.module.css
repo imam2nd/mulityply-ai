@@ -1,0 +1,84 @@
+.csWrapper {
+  @apply bg-secondary relative;
+}
+
+.cs {
+  @apply md:w-[89vw] max-w-7xl mx-auto ml-3 md:ml-auto flex flex-col md:flex-row items-end justify-between gap-16 text-white;
+}
+
+.csContentWrapper {
+  @apply w-full md:w-2/3 pl-8 py-11;
+}
+
+.csContent {
+  @apply pl-6 md:pl-10 relative flex flex-col gap-12;
+}
+
+.styledLine {
+  @apply absolute top-0 left-0 h-full bg-[#f95ae9] border-[.11rem] border-solid border-[#f95ae9];
+}
+
+.styledLine::before {
+  content: 'Case Study';
+  position: absolute;
+  top: 0;
+  left: -2rem;
+  height: 5rem;
+  white-space: nowrap;
+  rotate: -90deg;
+  font-size: clamp(0.90625rem, 0.875rem + 0.15625vw, 1.0625rem);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+@media (min-width: 768px) {
+  .styledLine::before {
+    left: -2.5rem;
+  }
+}
+
+.header {
+  @apply w-11/12 grid gap-1;
+}
+
+.csLogo {
+  @apply max-w-full h-auto;
+}
+
+.smallTitle {
+  font-size: clamp(0.75rem, 0.725rem + 0.125vw, 0.875rem);
+}
+
+.testimony {
+  @apply w-11/12 grid gap-6;
+}
+
+.bigTitle {
+  @apply font-bold leading-9 md:leading-10 tracking-tight;
+  font-size: clamp(1.5625rem, 1.4375rem + 0.625vw, 2.1875rem);
+}
+
+.psersonInfo {
+  @apply flex items-end gap-2 whitespace-nowrap;
+}
+
+.personImg {
+  @apply w-[4rem] sm:w-[5rem] md:w-[6.25rem] max-w-full h-auto;
+}
+
+.personName {
+  font-size: clamp(0.8125rem, 0.78125rem + 0.15625vw, 0.96875rem);
+  font-weight: 700;
+}
+
+.personRole {
+  font-size: clamp(0.75rem, 0.71875rem + 0.15625vw, 0.90625rem);
+}
+
+.csImgMobile {
+  @apply md:hidden;
+}
+
+.csImg {
+  @apply absolute right-0 max-h-full object-cover hidden md:inline-block md:w-1/3;
+}

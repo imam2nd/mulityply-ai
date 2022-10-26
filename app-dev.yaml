@@ -1,0 +1,8 @@
+runtime: python38
+service: b2b
+
+includes:
+  - app-common.yaml
+
+env_variables:
+  ENV: "dev"

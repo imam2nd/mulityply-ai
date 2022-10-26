@@ -1,0 +1,29 @@
+.carousel-bullet {
+  @apply relative text-highlight-base font-bold capitalize md:text-left transition-colors;
+  -webkit-transition: all 250ms ease-out;
+  -moz-transition: all 250ms ease-out;
+  -o-transition: all 250ms ease-out;
+  transition: all 250ms ease-out;
+  transition-property: border, color;
+}
+.carousel-bullet::before {
+  content: "";
+  @apply hidden md:block absolute top-0.5 -left-4 w-0.5 h-8 transition-colors bg-opacity-0;
+}
+.carousel-bullet::after {
+  content: "";
+  @apply hidden md:block absolute -bottom-1 inset-x-0 w-full h-0.5 transition-colors bg-opacity-0;
+}
+.active-bullet {
+  @apply text-[#1f1d1d];
+}
+.active-bullet::before {
+  @apply bg-highlight-base bg-opacity-100;
+}
+.active-bullet::after {
+  @apply bg-black bg-opacity-100;
+}
+.carousel-slider {
+  width: 100px;
+  @apply md:hidden absolute bottom-3 left-2 h-0.5 bg-black transition-transform duration-300 translate-x-0 origin-left;
+}

@@ -1,0 +1,63 @@
+.contactWrapper {
+  @apply relative py-20 bg-[#ffffff];
+}
+
+.contact {
+  @apply w-[89vw] max-w-5xl mx-auto;
+}
+
+.heading {
+  @apply grid gap-3;
+}
+
+.curvedArrow {
+  @apply absolute top-[-1rem] right-0 w-36 h-auto;
+}
+
+.title {
+  @apply font-bold text-[#1f1d1d] tracking-[-0.01em];
+  font-size: clamp(2.1875rem, 2.0625rem + 0.625vw, 2.8125rem);
+}
+
+.desc {
+  @apply text-[#8c8c8c];
+  font-size: clamp(0.75rem, 0.71875rem + 0.15625vw, 0.90625rem);
+}
+
+.form {
+  @apply mt-10 max-w-full sm:max-w-xl;
+}
+
+.formLayout {
+  @apply grid sm:grid-cols-2 gap-6 mb-6;
+}
+
+.fieldWrapper {
+  @apply grid gap-1;
+}
+
+.fieldLabel {
+  @apply text-[#1f1d1d];
+  font-size: clamp(0.75rem, 0.71875rem + 0.15625vw, 0.90625rem);
+}
+
+.fieldInput {
+  @apply py-3 pl-5 bg-[#f6f6f6] border-[.1rem] border-[#ececec] rounded-xl;
+  font-size: clamp(0.8125rem, 0.78125rem + 0.15625vw, 0.96875rem);
+}
+
+.fieldSelect {
+  @apply text-center w-full appearance-none;
+}
+.fieldSelect option {
+  @apply text-left text-lg;
+}
+
+.fieldTextArea {
+  @apply h-[16em] sm:h-[8em] resize-none;
+}
+
+.submitBtn {
+  @apply mt-9 px-8 py-2 rounded-[0.35rem] bg-highlight-base hover:bg-highlight-light transition-colors text-white;
+  font-size: clamp(0.8125rem, 0.8rem + 0.0625vw, 0.875rem);
+}

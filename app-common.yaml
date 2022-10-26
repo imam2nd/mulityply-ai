@@ -1,0 +1,34 @@
+handlers:
+  - url: /fonts/(.*\..*)
+    secure: always
+    static_files: src/fonts/\1
+    upload: src/fonts/(.*)
+    http_headers:
+      Access-Control-Allow-Origin: "*"
+
+  - url: /
+    secure: always
+    static_files: public/index.html
+    upload: public/index.html
+
+  - url: /(.+)/
+    secure: always
+    static_files: public/\1/index.html
+    upload: public/(.+)/index.html
+
+  - url: /(.*\..*)
+    secure: always
+    static_files: public/\1
+    upload: public/(.*)
+    require_matching_file: true
+
+  - url: /(.*)
+    secure: always
+    static_files: public/\1/index.html
+    upload: public/(.+)/index.html
+    require_matching_file: true
+
+  - url: /.*
+    secure: always
+    static_files: public/404.html
+    upload: public/404.html

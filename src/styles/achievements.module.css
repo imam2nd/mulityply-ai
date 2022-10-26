@@ -1,0 +1,27 @@
+.section {
+  @apply bg-background text-white;
+}
+.wrapper {
+  @apply lg:max-w-screen-lg mx-auto p-2 relative;
+}
+
+.achievemetsWrapper {
+  @apply flex flex-col md:flex-row gap-10 py-12;
+}
+
+.achievement {
+  @apply flex flex-1 flex-col items-center gap-3;
+}
+.achievement h3 {
+  background: -webkit-linear-gradient(
+    -90deg,
+    rgba(141, 255, 194, 1),
+    rgba(28, 201, 212, 0.75)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @apply text-5xl md:text-4xl font-bold;
+}
+.achievement p {
+  @apply text-lg font-bold text-center lg:whitespace-pre leading-snug;
+}

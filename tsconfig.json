@@ -1,0 +1,22 @@
+{
+  "extends": "@multiply/lib/tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "esnext",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "./src/**/*",
+    "./gatsby-node.ts",
+    "./gatsby-config.ts",
+    "./plugins/**/*"
+  ]
+}

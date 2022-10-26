@@ -1,0 +1,93 @@
+.transformWrapper {
+  @apply py-20 bg-[#1f1d1d] text-white;
+}
+
+.transform {
+  @apply w-[89vw] max-w-7xl mx-auto;
+}
+
+.header {
+  @apply grid place-items-center gap-6;
+}
+
+.title {
+  @apply font-bold text-center tracking-tight md:leading-[50px];
+  font-size: clamp(1.75rem, 1.625rem + 0.625vw, 2.375rem);
+}
+
+.underline {
+  @apply relative;
+}
+
+.underline::after {
+  content: "";
+  @apply absolute top-9 left-0 right-0 mx-auto bg-accent w-full h-1;
+}
+
+.process {
+  @apply mt-12 p-6 md:p-10 flex flex-col md:flex-row gap-10 md:gap-24 border-[1px] border-solid border-[#3065ed] rounded-[31px];
+}
+
+.curveWrapper {
+  max-width: 400px;
+  @apply flex flex-col gap-2;
+}
+
+.curveText {
+  font-size: clamp(0.8125rem, 0.78125rem + 0.15625vw, 0.96875rem);
+  font-weight: 700;
+  line-height: 1.625rem;
+}
+
+.cards {
+  @apply grid md:grid-cols-3 gap-8 ml-[2.5rem] md:ml-0 pt-4;
+}
+
+.card {
+  @apply flex flex-col gap-2;
+}
+
+.carIconWrapper {
+  @apply relative;
+}
+
+.cardNumber {
+  @apply grid place-items-center absolute left-[-2.5rem] bottom-2 bg-[#316AFB] w-5 h-5 rounded-full;
+  font-size: clamp(0.625rem, 0.6125rem + 0.0625vw, 0.6875rem);
+}
+
+.cardIcon {
+  @apply scale-90;
+}
+
+.cardTitle {
+  font-size: clamp(0.8125rem, 0.78125rem + 0.15625vw, 0.96875rem);
+  font-weight: 700;
+}
+
+.cardfeatures {
+  @apply mt-[-.3rem];
+}
+
+.cardFeature {
+  @apply list-disc ml-4;
+  font-size: clamp(0.75rem, 0.71875rem + 0.15625vw, 0.90625rem);
+}
+
+.iso {
+  @apply mt-12 grid place-items-center gap-4;
+}
+
+.isoTitle {
+  @apply font-bold text-center;
+  font-size: clamp(1.375rem, 1.3rem + 0.375vw, 1.75rem);
+}
+
+.isoImgWrapper {
+  @apply flex flex-col md:flex-row gap-4;
+}
+
+.isoDesc {
+  @apply text-center;
+  font-size: clamp(0.75rem, 0.71875rem + 0.15625vw, 0.90625rem);
+}

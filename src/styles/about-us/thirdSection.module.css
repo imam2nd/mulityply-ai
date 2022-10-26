@@ -1,0 +1,77 @@
+.csWrapper {
+  @apply bg-[#F6FBFF];
+}
+
+.cs {
+  @apply md:w-[89vw] max-w-7xl mx-auto ml-3 md:ml-auto flex flex-col md:flex-row items-end justify-between gap-16 text-[#000];
+}
+
+.csContentWrapper {
+  @apply w-full pl-8 md:w-2/3 py-11;
+}
+
+.csContent {
+  @apply flex items-center gap-12 pl-6 md:pl-10;
+}
+
+/* .styledLine {
+  @apply absolute top-0 left-0 h-full bg-[#f95ae9] border-[.11rem] border-solid border-[#f95ae9];
+} */
+
+@media (min-width: 768px) {
+  .styledLine::before {
+    left: -2.5rem;
+  }
+}
+
+.header {
+  @apply grid w-11/12 gap-1;
+}
+
+.csLogo {
+  @apply h-auto max-w-full;
+}
+
+.smallTitle {
+  font-size: clamp(0.75rem, 0.725rem + 0.125vw, 0.875rem);
+}
+
+.testimony {
+  @apply grid w-11/12 gap-6;
+}
+
+.bigTitle {
+  @apply font-bold leading-9 tracking-tight md:leading-10;
+  font-size: clamp(1.5625rem, 1.4375rem + 0.625vw, 2.1875rem);
+}
+
+.psersonInfo {
+  @apply flex items-end gap-2 whitespace-nowrap;
+}
+
+.personImg {
+  @apply w-[4rem] sm:w-[5rem] md:w-[6.25rem] max-w-full h-auto;
+}
+
+.personName {
+  font-size: clamp(0.8125rem, 0.78125rem + 0.15625vw, 0.96875rem);
+  font-weight: 700;
+}
+
+.personRole {
+  font-size: clamp(0.75rem, 0.71875rem + 0.15625vw, 0.90625rem);
+}
+
+.csImgMobile {
+  @apply md:hidden;
+}
+
+.csImg {
+  @apply right-0 hidden object-cover max-h-full md:inline-block md:w-1/3;
+}
+
+.eight_element_title {
+  background: linear-gradient(to top, #1cc9d4 25%, #8dffc2 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

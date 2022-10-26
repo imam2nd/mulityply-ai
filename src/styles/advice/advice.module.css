@@ -1,0 +1,15 @@
+.section {
+  @apply container mx-auto py-12 xl:max-w-screen-xl;
+}
+
+.header {
+  font-size: 1.4rem;
+  font-size: clamp(1.4rem, 1.28rem + 0.6vw, 2rem);
+  @apply ml-2 font-bold;
+}
+.description {
+  @apply text-lg mt-8 text-center;
+}
+.coverImg {
+  @apply w-full max-w-2xl mx-auto mt-4 block aspect-video;
+}

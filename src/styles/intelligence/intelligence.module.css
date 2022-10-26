@@ -1,0 +1,62 @@
+.section {
+  @apply container xl:max-w-screen-xl mx-auto py-12;
+}
+
+.header {
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+  @apply ml-2 font-bold;
+}
+.description {
+  @apply text-lg mt-8 text-center;
+}
+.coverImg {
+  @apply w-full max-w-2xl mx-auto mt-4 block aspect-video;
+}
+
+.carouselWrapper {
+  @apply w-full flex flex-col md:flex-row md:justify-between gap-4 md:gap-16 mt-10 mx-auto;
+}
+
+.carousel {
+  @apply w-full h-[55rem] md:h-[47rem] md:flex md:flex-row-reverse;
+}
+
+.tablist {
+  @apply relative mx-2 md:mx-0 md:ml-4 pb-4 flex md:flex-col gap-4 md:gap-5 md:items-start overflow-auto md:overflow-visible px-2 md:px-2 py-1 md:py-2 md:w-52 outline-none whitespace-pre md:whitespace-normal;
+}
+
+.tablist::before {
+  content: '';
+  @apply hidden md:block absolute top-2 -left-2 w-0.5 h-2/5 md:bg-gray-200;
+}
+
+.panel {
+  @apply rounded px-4 py-2;
+}
+.panelTitle {
+  @apply text-3xl font-bold;
+}
+.panelText {
+  @apply text-lg mt-2;
+}
+.panelImg {
+  @apply w-full max-w-2xl mx-auto my-2 block aspect-video object-contain;
+}
+.features {
+  @apply flex flex-col md:flex-row mt-2;
+}
+.feature {
+  @apply flex-1 flex flex-row justify-start p-2 h-full;
+}
+.feature::before {
+  content: '✓';
+  @apply text-highlight-base text-xl font-bold;
+  margin-right: 0.5rem;
+}
+.feature h5 {
+  @apply text-xl font-bold;
+}
+
+.feature p {
+  @apply mt-2;
+}

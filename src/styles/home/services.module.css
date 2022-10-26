@@ -1,0 +1,68 @@
+.section {
+  @apply relative;
+}
+.strokeWrapper {
+  @apply absolute left-0 hidden xl:w-40 lg:w-36 lg:inline -top-24;
+}
+.strokeWrapper svg {
+  @apply w-full;
+}
+.serviceTitle {
+  @apply text-2xl font-bold text-gray-800 sm:text-3xl md:text-4xl;
+}
+.mark {
+  @apply border-b-[6px] border-b-accent;
+}
+.wrapper {
+  @apply relative p-2 mx-auto lg:max-w-screen-lg pt-28;
+}
+.bannerWrapper {
+  @apply py-12;
+}
+.banner {
+  @apply flex flex-col items-center gap-5 md:flex-row md:gap-10;
+}
+.banner:nth-child(even) {
+  @apply md:flex-row-reverse;
+}
+.bannerImageWrapper {
+  @apply flex-1 aspect-[4/3];
+}
+.bannerImageWrapper img {
+  @apply w-full max-w-md aspect-[4/3] object-contain;
+}
+.bannerContent {
+  @apply flex-1 pr-10 mb-20 md:pr-0;
+}
+.bannerContent:last-of-type {
+  @apply mb-0;
+}
+.bannerContent span {
+  @apply flex items-center;
+}
+.bannerContent span svg {
+  @apply w-10 h-10 md:w-12 md:h-12;
+}
+.bannerContent span h3 {
+  @apply flex-1 my-2 ml-2 text-2xl font-bold text-gray-800 md:my-3 sm:text-xl;
+}
+.bannerContent p {
+  @apply pl-12 text-gray-600 md:pl-14;
+}
+
+.achievementsTitle {
+  @apply mt-12 text-2xl font-bold text-center text-gray-800 sm:text-3xl md:text-4xl;
+}
+.achievemetsWrapper {
+  @apply flex flex-col gap-10 mt-2 mb-12 md:flex-row;
+}
+
+.achievement {
+  @apply flex flex-col items-center flex-1 gap-3 p-8;
+}
+.achievement h3 {
+  @apply text-4xl font-bold text-highlight-base;
+}
+.achievement p {
+  @apply text-lg font-bold leading-snug text-center text-secondary lg:whitespace-pre;
+}

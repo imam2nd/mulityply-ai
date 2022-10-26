@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(../fonts/PPNeueMontreal-Regular.woff);
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(../fonts/PPNeueMontreal-Bold.woff);
+  font-weight: bold;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@tailwind utilities;

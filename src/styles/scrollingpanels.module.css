@@ -1,0 +1,90 @@
+.scrolling-panel-wrapper {
+  @apply lg:flex lg:flex-row lg:items-stretch;
+}
+
+.tablist {
+  @apply hidden lg:flex lg:flex-col gap-1 lg:gap-0 lg:w-60 lg:items-start overflow-auto lg:overflow-visible sticky py-2 z-10 top-[6rem];
+}
+
+.tab {
+  @apply outline-none text-left whitespace-pre lg:whitespace-normal text-highlight-base font-bold;
+  @apply md:border-l-[3px] md:border-gray-200 px-2 py-1 lg:py-2 pl-4;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transition-property: border-color, color;
+}
+.tab.active {
+  @apply border-black text-black;
+}
+.tab span {
+  display: inline;
+  background-image: linear-gradient(black, black);
+  background-size: 0% 2.5px;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  @apply pb-1 leading-snug;
+  transition: background-size 300ms ease-out;
+}
+.tab.active span {
+  background-size: 100% 2.5px;
+}
+
+.mobile-tablist {
+  @apply lg:hidden overflow-auto sticky pt-6 pb-4 px-2 z-10 top-[4rem] left-0 right-0 bg-white flex gap-4;
+}
+.mobile-tab {
+  @apply outline-none text-left whitespace-pre text-highlight-base font-bold block;
+}
+.mobile-tab.active-tab {
+  @apply text-black;
+}
+.indicator {
+  @apply w-[100px] absolute bottom-3 left-2 h-0.5 bg-black transition-transform ease-linear duration-[500ms] translate-x-0 origin-left;
+}
+
+.panels-wrapper {
+  @apply h-[48rem] lg:h-screen overflow-y-auto lg:snap-y lg:snap-mandatory mt-10 lg:mt-0;
+}
+.panel {
+  z-index: 0;
+  @apply snap-start rounded px-6 py-12 md:px-10 md:py-9 lg:px-[70px] lg:py-[60px];
+}
+
+.panel-title {
+  @apply text-3xl font-bold;
+}
+.panel-text {
+  @apply text-lg mt-2;
+}
+.panel-img-wrapper {
+  @apply mx-auto my-4 lg:my-8 flex justify-center items-center max-w-xl relative;
+}
+.panel-img {
+  z-index: 2;
+  @apply h-[200px] lg:h-[300px] object-contain;
+}
+.panel-img-wrapper::after {
+  content: " ";
+  @apply bg-gray-900 bg-opacity-5 rounded-2xl absolute aspect-[9/8] top-0 bottom-0 -rotate-12;
+  z-index: 1;
+}
+.features {
+  @apply flex flex-col md:flex-row gap-8 md:gap-2 mt-2;
+}
+.feature {
+  @apply flex-1 flex flex-row justify-start h-full;
+}
+.feature::before {
+  content: "✓";
+  @apply text-highlight-base text-xl font-bold;
+  margin-right: 0.5rem;
+}
+.feature h5 {
+  @apply text-xl font-bold;
+}
+
+.feature p {
+  @apply mt-1.5 text-base leading-snug;
+}

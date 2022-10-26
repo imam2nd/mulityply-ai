@@ -1,0 +1,50 @@
+.wrapper {
+  background: linear-gradient(209.14deg, #252228 11.72%, #1c1c21 89.61%);
+  @apply flex items-center px-2 py-10 pt-24 text-white lg:h-screen;
+}
+.content-wrapper {
+  @apply container mx-auto lg:max-w-screen-lg md:max-w-screen-sm;
+}
+.content {
+  @apply flex flex-col-reverse items-center mb-12 lg:flex-row md:gap-10;
+}
+.text-wrapper {
+  @apply flex-1;
+}
+.img-wrapper {
+  @apply flex-1 max-w-sm md:max-w-lg py-1 md:py-0 w-full text-center p-2 aspect-[4/3];
+}
+.title {
+  font-size: 2rem;
+  font-size: clamp(2rem, 1.45rem + 2.73vw, 3rem);
+  @apply pl-10 font-bold;
+  line-height: 1.2;
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  @apply bg-accent absolute top-0.5 left-0 w-1.5 h-16;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  font-size: clamp(0.875rem, 0.81rem + 0.284vw, 1rem);
+  @apply pl-10 mt-2 text-gray-200;
+}
+
+.button-wrapper {
+  @apply flex gap-5 pl-10 mt-8;
+}
+
+.call-to-action-btn {
+  @apply px-5 py-3 text-base transition-colors border rounded-md border-highlight-base bg-highlight-base hover:bg-highlight-light;
+}
+.secondary-action-btn {
+  @apply px-5 py-3 text-base transition-colors border border-white rounded-md hover:bg-gray-50 hover:bg-opacity-25;
+}
+
+.bottom-text {
+  font-size: 0.81rem;
+  @apply pl-10 mt-2 text-gray-200;
+}

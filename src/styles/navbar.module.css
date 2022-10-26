@@ -1,0 +1,210 @@
+.navWrapper {
+  @apply whitespace-nowrap transition-all fixed top-0 left-0 z-50 w-[100%];
+}
+
+.changeBg {
+  background: linear-gradient(209.14deg, #252228 11.72%, #1c1c21 89.61%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 10px 22px rgba(0, 0, 0, 0.17);
+}
+
+.nav {
+  width: 95vw;
+  @apply mx-auto py-6 flex items-center justify-between text-white;
+}
+
+.navLogo {
+  @apply max-w-full h-auto;
+}
+
+.menuBtn {
+  @apply block w-6 h-auto object-cover ml-auto lg:hidden hover:scale-[105%] active:scale-[95%] transition-transform cursor-pointer;
+}
+
+.navLinks {
+  @apply fixed lg:relative transition-transform duration-500 pt-10 lg:pt-0 lg:pl-0 w-full lg:w-auto h-full lg:h-auto bg-transparent flex-col lg:flex-row items-start justify-start lg:items-center lg:justify-between gap-7 font-normal overflow-auto lg:overflow-visible;
+  font-size: 0.90625rem;
+  font-size: clamp(0.90625rem, 0.875rem + 0.15625vw, 1.0625rem);
+}
+
+.desktopLinks {
+  @apply hidden lg:flex;
+}
+
+.mobileLinks {
+  @apply inset-0 translate-x-full top-[4.7rem] gap-4 bg-[#1f1d1d] text-black flex items-stretch lg:hidden px-8;
+}
+
+.mobileLinks.active {
+  @apply translate-x-0;
+}
+
+.stopOverflowY {
+  @apply overflow-y-hidden;
+}
+
+.navLink {
+  @apply text-white text-opacity-90 hover:text-opacity-100 transition-opacity;
+}
+
+.navLinkHome .navIcon {
+  @apply w-5 h-5 object-cover hover:opacity-80 active:opacity-100 transition-opacity;
+}
+
+.navLinkContact {
+  @apply text-sm px-6 py-3 bg-highlight-base hover:bg-highlight-light rounded transition-all;
+}
+
+.dropBtnWrapper {
+  @apply flex items-center gap-1;
+}
+
+.menu {
+  @apply relative;
+}
+
+.activeLink {
+  @apply text-opacity-100 hover:text-opacity-100 focus:outline-none focus-visible:ring-0;
+}
+
+.dropArrow {
+  @apply h-5 w-5 text-white transition duration-150 ease-in-out text-opacity-70 lg:text-opacity-70 group-hover:text-opacity-80;
+}
+
+.activeDropArrow {
+  @apply text-opacity-100 rotate-180;
+}
+
+.tranEnter {
+  @apply transition ease-out duration-200;
+}
+
+.tranEnterFrom {
+  @apply opacity-0 translate-y-1;
+}
+
+.tranEnterTo {
+  @apply opacity-100 translate-y-0;
+}
+
+.tranLeave {
+  @apply transition ease-in duration-150;
+}
+
+.tranLeaveFrom {
+  @apply transition ease-in duration-150;
+}
+
+.tranLeaveFrom {
+  @apply opacity-100 translate-y-0;
+}
+
+.tranLeaveTo {
+  @apply opacity-0 translate-y-1;
+}
+
+.popPanel {
+  @apply mt-3 absolute left-1/2 -translate-x-1/2 z-10  transform;
+}
+
+.popPanelOne {
+  @apply w-[69vw] max-w-4xl left-24 -translate-x-0 lg:-translate-x-full whitespace-normal;
+}
+
+.popPanelTwo {
+  @apply w-36;
+}
+
+.dropsMenu {
+  @apply overflow-x-auto hidden lg:grid gap-1 bg-white rounded-lg shadow-lg ring-1 ring-black ring-opacity-5;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.mobileMenu {
+  @apply block lg:hidden;
+}
+
+.dropsLayout {
+  @apply grid gap-[.6rem] lg:block lg:px-8 lg:py-5;
+}
+
+.dropType {
+  @apply block lg:mb-4 text-white lg:text-[#252228] font-bold whitespace-nowrap hover:text-opacity-75 transition-opacity;
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+}
+
+.drops {
+  @apply grid mb-6 lg:mb-0 gap-3 whitespace-normal;
+}
+
+.dropsOne {
+  @apply relative pb-4 lg:pb-0 lg:grid-cols-2 border-b-2 border-b-[#a9a9a9] lg:border-none;
+}
+
+.dropsOne::before {
+  content: "";
+  @apply hidden lg:block absolute top-0.5 -right-8 w-[.1rem] h-full bg-[#a9a9a9];
+}
+
+.dropsTwo {
+  @apply relative pb-4 lg:pb-0 grid-cols-1 border-b-2 border-b-[#a9a9a9] lg:border-none;
+}
+
+.dropsTwo::before {
+  content: "";
+  @apply hidden lg:block absolute top-0.5 -right-8 w-[.1rem] h-full bg-[#a9a9a9];
+}
+
+.dropsThree {
+  @apply grid-cols-1;
+}
+
+.dropsFour {
+  @apply mb-0 grid-cols-1 lg:-ml-2 whitespace-nowrap;
+}
+
+.drop {
+  @apply grid hover:opacity-75 transition-opacity;
+}
+
+.dropIcon {
+  @apply hidden lg:block mb-1 w-8 h-8 object-cover;
+}
+
+.textWrapper {
+  @apply grid gap-1 lg:gap-0;
+}
+
+.cardTitle {
+  @apply text-white lg:text-[#212121] font-semibold;
+  font-size: 0.8125rem;
+  font-size: clamp(0.8125rem, 0.78125rem + 0.15625vw, 0.96875rem);
+}
+
+.cardDesc {
+  @apply text-[#dedede] lg:text-[#444444];
+  font-size: 0.75rem;
+  font-size: clamp(0.75rem, 0.71875rem + 0.15625vw, 0.90625rem);
+}
+
+@media (min-width: 1024px) {
+  .navLink::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .navLink:hover::after {
+    @apply w-full;
+  }
+
+  .activeLink::after {
+    @apply w-full;
+  }
+}
